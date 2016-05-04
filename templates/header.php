@@ -14,7 +14,12 @@
       </nav>
     </div>
     <div class="col-lg-2">
-      Social icons
+      <div id="footer-social">
+        <a id="facebook" href="https://www.facebook.com/qurewater" title="Connect with us on Facebook" target="_blank">Facebook</a> <a id="twitter" href="https://twitter.com/QureWater" title="Follow us on Twitter" target="_blank">Twitter</a>
+        <a id="pinterest" href="https://www.pinterest.com/qurewater/" title="Visit us on Pinterest" target="_blank">Pinterest</a>
+        <a id="instagram" href="https://www.instagram.com/qurewater/" title="Connect with us on Instagram" target="_blank">Instagram</a>
+        <a id="youtube" href="https://www.youtube.com/user/qurewater1" title="Connect with us on Instagram" target="_blank">Youtube</a>
+      </div>
     </div>
     </div>
   </div>

@@ -1,5 +1,9 @@
 @font-face {
 	font-family: Novecento;  
-	src: url(http://localhost:3000/qure/wp-content/themes/qure-water/dist/fonts/Novecentowide-Normal-webfont.woff);  
+	src: url(/qure/wp-content/themes/qure-water/dist/fonts/Novecentowide-Normal-webfont.woff);  
 	font-weight: normal;  
+}
+
+a {
+	color: $main-blue;
 }

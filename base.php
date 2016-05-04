@@ -25,8 +25,8 @@ use Roots\Sage\Wrapper;
             $thumb_id = get_post_thumbnail_id();
             $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
             $thumb_url = $thumb_url_array[0];
-            if($thumb_url.length == 0) {
-              $thumb_url = '/ntsoa/wp-content/uploads/2016/03/page-header.jpg';
+            if($thumb_url && $thumb_url.length == 0) {
+              $thumb_url = '/qure/wp-content/uploads/2016/05/page-header.jpg';
             }
             $title = get_the_title();
             if(is_front_page() || is_home()) {
