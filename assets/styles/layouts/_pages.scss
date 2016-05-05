@@ -55,3 +55,59 @@
 			color: #333;
 		}
 }
+
+#section-4 {
+	font-family: $opensans;
+	padding: 50px 0;
+	h3 {
+		font-size: 28px;
+		font-weight: 300;
+	}
+}
+
+#section-5 {
+	background-color: rgb(233, 233, 233);
+	padding: 45px 0;
+}
+
+#section-6 {
+	padding: 45px 0;
+	.find-img {
+		text-align: center;
+	}
+	.title {
+		color: $main-blue;
+		font-family: $opensans;
+		font-weight: 300;
+		font-size: 30px;
+	}
+	h4 {
+		font-family: $opensans;
+		font-size: 17.5px;
+		font-weight: 300;
+	}
+	.col-lg-4 {
+		float: left;
+		.btn-default {
+			float: left;
+			margin-right: 35px;
+		}
+	}
+}
+
+#section-7 {
+	background: url(/qure/wp-content/themes/qure-water/dist/images/section-7-bg.jpg) center center repeat;
+	background-size: 100% auto;
+	.color-overlay {
+		background-color: rgba(2,174,232,0.7);
+		padding: 50px 0;
+		.container {
+			.custom {
+				span {
+					font-family: $opensans;
+					font-weight: 300;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.btn-default {
+	background: $main-blue;
+	color: #fff;
+	text-transform: uppercase;
+	&:hover {
+		color: #fff;
+		background: $main-purple;
+	}
+}

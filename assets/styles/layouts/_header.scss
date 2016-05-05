@@ -49,11 +49,11 @@ header.banner {
 					color: #464646;
 					text-decoration: none;
 					font-family: $novecento;
+					font-weight: 600;
 					line-height: 100px;
 					padding: 0px 10px;
 					font-size: 14px;
 					font-style: normal;
-					text-transform: uppercase;
 					&:hover {
 						background-color: #fff;
 						cursor: pointer;
@@ -64,7 +64,6 @@ header.banner {
 					display: none; 
 					padding: 0 0 5px 0;
 	    			position: absolute;
-	    			text-transform: none!important;
 	    			z-index:999;
 	   				top: 100px;
 	   				li {
@@ -76,11 +75,11 @@ header.banner {
 	   					width: 315px;
 	   					a {
 	   						display: block;
-	   						font-size: 14px;
+	   						font-size: 12px;
+	   						font-family: $opensans;
 	   						font-weight: normal;
 	   						line-height: 20px;
 	   						padding: 10px 20px;
-	   						text-transform: none!important;
 	   						width: 100%;
 	   						&:hover {
 	   							background-color: #eee;
