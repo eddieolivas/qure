@@ -3,21 +3,21 @@
 <?php echo do_shortcode('[rev_slider alias="home-slider"]'); ?>
 <section id="section-2" class="container">
 	<div class="col-lg-4">
-		<i class="fa fa-heart"></i>
+		<i class="fa fa-heart revealOnScroll" data-animation="fadeInUp" data-timeout="0"></i>
 		<span class="home-title">
 			Shelf-Stable Alkaline pH of 9.5+
 		</span>
 		<p>Shelf-Stable Alkaline pH of 9.5+ with a 2-Year Shelf Life, QURE WATER is made with a natural proprietary blend of ionic alkaline minerals bearing a powerful and stable alkaline pH of 9.5+.</p>
 	</div>
 	<div class="col-lg-4">
-		<i class="fa fa-thumbs-up"></i>
+		<i class="fa fa-thumbs-up revealOnScroll" data-animation="fadeInUp" data-timeout="0"></i>
 		<span class="home-title">
 			Reverse Osmosis Purification and Mineralization Process
 		</span>
 		<p>9-Stage Reverse Osmosis Purification and Mineralization Process. This technology removes and purifies everything from the water to a 05.00 TDS after which it gets ionized with natural alkaline minerals.</p>
 	</div>
 	<div class="col-lg-4">
-		<i class="fa fa-leaf"></i>
+		<i class="fa fa-leaf revealOnScroll" data-animation="fadeInUp" data-timeout="0"></i>
 		<span class="home-title">
 			Natural  Ionic Alkaline Minerals
 		</span>
@@ -27,9 +27,9 @@
 
 <section id="section-3">
 	<div class="container">
-		<div class="col-lg-7">
+		<div class="col-lg-7 revealOnScroll" data-animation="fadeInLeft" data-timeout="0">
 			<div class="home-title">
-				Why drink Qure Water?
+				Why Drink Qure Water?
 			</div>
 			<p>
 				QURE Water is a perfect combination of pristine purified water infused with Mother Nature’s ALKALINE minerals. As a result, QURE has a distinguished smooth silky taste with a powerful and stable alkaline pH of 9.5+. QURE is the electrolyte infused hydration choice designed to counterbalance acidity and complement a balanced lifestyle.
@@ -43,7 +43,7 @@
 				<a href="#">Find out more →</a>
 			</p>
 		</div>
-		<div class="col-lg-5">
+		<div class="col-lg-5 revealOnScroll" data-animation="fadeInRight" data-timeout="0">
 			<img src="/qure/wp-content/themes/qure-water/dist/images/bottle_cut.png" />
 		</div>
 	</div>
@@ -63,7 +63,7 @@
 </section>
 
 <section id="section-5">
-	<div class="container">
+	<div class="container revealOnScroll" data-animation="fadeInUp" data-timeout="0">
 		<div class="custom">
 			<p>
 				<a href="http://www.akins.com" target="_blank"><img style="float: left;" src="/qure/wp-content/themes/qure-water/dist/images/akins.jpg" alt="akins"></a>
@@ -80,19 +80,19 @@
 
 <section id="section-6">
 	<div class="container">
-		<div class="col-lg-6 find-img">
+		<div class="col-lg-6 find-img revealOnScroll" data-animation="fadeInLeft" data-timeout="0">
 			<img src="/qure/wp-content/themes/qure-water/dist/images/findImage.png" alt="Find a store near you." />
 		</div>
-		<div calss="col-lg-6">
+		<div class="col-lg-6 revealOnScroll" data-animation="fadeInRight" data-timeout="0">
 			<h3 class="header"><span class="title">Find a Store</span></h3>																		<div class="mod-content clearfix">	
 			<div class="mod-inner clearfix">
 				<div class="custom">
 					<h4>Looking for Qure Water?</h4>
 					<p>&nbsp;</p>
-					<div class="col-lg-2">
+					<div class="col-lg-4">
 						<a class="btn btn-default btn-large btn-block" href="/main/index.php/where-to-purchase/find-a-store">Store Locator</a>
 					</div>
-					<div class="col-lg-2">
+					<div class="col-lg-4">
 						<a class="btn btn-default btn-large btn-block" href="http://qurewater.com/qurestore/">Buy Online</a>
 					</div>
 				</div>

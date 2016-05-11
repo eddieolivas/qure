@@ -5,7 +5,7 @@
       <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="/qure/wp-content/themes/qure-water/dist/images/qure-logo.png" /></a>
     </div>
     <div class="col-lg-8">
-      <nav class="nav-primary">
+      <nav class="nav-primary" role="navigation">
         <?php
         if (has_nav_menu('primary_navigation')) :
           wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);

@@ -1,6 +1,17 @@
 <footer class="content-info">
   <div class="container">
-    <?php dynamic_sidebar('sidebar-footer'); ?>
+  	<div class="col-lg-3">
+    	<?php dynamic_sidebar('sidebar-footer'); ?>
+    </div>
+    <div class="col-lg-3">
+    	<?php dynamic_sidebar('sidebar-footer-2'); ?>
+    </div>
+    <div class="col-lg-3">
+    	<?php dynamic_sidebar('sidebar-footer-3'); ?>
+    </div>
+    <div class="col-lg-3">
+    	<?php dynamic_sidebar('sidebar-footer-4'); ?>
+    </div>
   </div>
   <div class="copyright">
   	<div class="container">
