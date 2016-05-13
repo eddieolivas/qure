@@ -44,7 +44,7 @@
 			</p>
 		</div>
 		<div class="col-lg-5 revealOnScroll" data-animation="fadeInRight" data-timeout="0">
-			<img src="/qure/wp-content/themes/qure-water/dist/images/bottle_cut.png" />
+			<img src="/wp-content/themes/qure/dist/images/bottle_cut.png" />
 		</div>
 	</div>
 </section>
@@ -66,13 +66,13 @@
 	<div class="container revealOnScroll" data-animation="fadeInUp" data-timeout="0">
 		<div class="custom">
 			<p>
-				<a href="http://www.akins.com" target="_blank"><img style="float: left;" src="/qure/wp-content/themes/qure-water/dist/images/akins.jpg" alt="akins"></a>
-				<a href="http://www.amazon.com" target="_blank"><img src="/qure/wp-content/themes/qure-water/dist/images/amazon.jpg" alt="amazon"></a>
-				<a href="http://www.mothersmarket.com/" target="_blank"><img src="/qure/wp-content/themes/qure-water/dist/images/mothers.jpg" alt="mothers"></a>
-				<a href="http://www.newfrontiersmarket.com/" target="_blank"><img src="/qure/wp-content/themes/qure-water/dist/images/newfrontiers.jpg" alt="newfrontiers"></a>
-				<a href="https://www.opensky.com/" target="_blank"><img src="/qure/wp-content/themes/qure-water/dist/images/opensky.jpg" alt="opensky"></a>
-				<a href="http://www.sprouts.com/" target="_blank"><img src="/qure/wp-content/themes/qure-water/dist/images/sprouts.jpg" alt="sprouts"></a>
-				<a href="http://www.wholefoodsmarket.com" target="_blank"><img src="/qure/wp-content/themes/qure-water/dist/images/wholefoods.jpg" alt="wholefoods"></a>
+				<a href="http://www.akins.com" target="_blank"><img style="float: left;" src="/wp-content/themes/qure/dist/images/akins.jpg" alt="akins"></a>
+				<a href="http://www.amazon.com" target="_blank"><img src="/wp-content/themes/qure/dist/images/amazon.jpg" alt="amazon"></a>
+				<a href="http://www.mothersmarket.com/" target="_blank"><img src="/wp-content/themes/qure/dist/images/mothers.jpg" alt="mothers"></a>
+				<a href="http://www.newfrontiersmarket.com/" target="_blank"><img src="/wp-content/themes/qure/dist/images/newfrontiers.jpg" alt="newfrontiers"></a>
+				<a href="https://www.opensky.com/" target="_blank"><img src="/wp-content/themes/qure/dist/images/opensky.jpg" alt="opensky"></a>
+				<a href="http://www.sprouts.com/" target="_blank"><img src="/wp-content/themes/qure/dist/images/sprouts.jpg" alt="sprouts"></a>
+				<a href="http://www.wholefoodsmarket.com" target="_blank"><img src="/wp-content/themes/qure/dist/images/wholefoods.jpg" alt="wholefoods"></a>
 			</p>
 		</div>
 	</div>
@@ -81,7 +81,7 @@
 <section id="section-6">
 	<div class="container">
 		<div class="col-lg-6 find-img revealOnScroll" data-animation="fadeInLeft" data-timeout="0">
-			<img src="/qure/wp-content/themes/qure-water/dist/images/findImage.png" alt="Find a store near you." />
+			<img src="/wp-content/themes/qure/dist/images/findImage.png" alt="Find a store near you." />
 		</div>
 		<div class="col-lg-6 revealOnScroll" data-animation="fadeInRight" data-timeout="0">
 			<h3 class="header"><span class="title">Find a Store</span></h3>																		<div class="mod-content clearfix">	
@@ -106,7 +106,7 @@
 		<div class="container">
 			<div class="custom">
 				<div>
-					<a href="/main/about-us/core-belief-and-mission"><img style="display: block; margin-left: auto; margin-right: auto;" src="/qure/wp-content/themes/qure-water/dist/images/givingback.png" alt="givingback"></a>
+					<a href="/main/about-us/core-belief-and-mission"><img style="display: block; margin-left: auto; margin-right: auto;" src="/wp-content/themes/qure/dist/images/givingback.png" alt="givingback"></a>
 				</div>
 				<h4 style="text-align: center;"><span style="color: #ffffff;"><strong>GIVING BACK</strong>: A Percentage of All Our Online Sales Will Be Aggregated on a Quarterly Basis and Given to 4 Awesome Charities!</span><br><span style="color: #ffffff;">If you prefer, you can also choose your charity of choice before confirming checkout. For more info, <span style="text-decoration: underline;"><strong><a href="/main/about-us/core-belief-and-mission"><span style="color: #ffffff; text-decoration: underline;">click here </span> </a> </strong> </span> </span></h4>
 				</div>
