@@ -49,8 +49,10 @@
         });
       }
 
+      //revealOnScroll();
+
       $window.on('scroll', revealOnScroll);
-      revealOnScroll();
+      
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
