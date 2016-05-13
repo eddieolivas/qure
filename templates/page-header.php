@@ -1,5 +1,4 @@
 <?php use Roots\Sage\Titles; ?>
-
-<div class="page-header">
-  <h1><?= Titles\title(); ?></h1>
-</div>
+<?php if ( function_exists('yoast_breadcrumb') ) 
+{yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
+<hr class="top-hr" />

@@ -20,25 +20,23 @@ use Roots\Sage\Wrapper;
     ?>
     <div class="wrap" role="document">
         <div class="content row content-row">
-          <?php if(!is_page(83)) { ?>
+          <?php if(is_page(14)) { ?>
+            <div class="page-header">
+              <?php echo do_shortcode('[rev_slider alias="bottling-slider"]'); ?>
+            </div>
+            <div class="container">
+          <?php } elseif(!is_page(83)) { ?>
           <?php 
-            $thumb_id = get_post_thumbnail_id();
-            $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-            $thumb_url = $thumb_url_array[0];
-            if($thumb_url && strlen($thumb_url) == 0) {
-              $thumb_url = '/qure/wp-content/uploads/2016/05/page-header.jpg';
-            }
             $title = get_the_title();
             if(is_front_page() || is_home()) {
               $title = "Blog";
             }
           ?>
           <div class="page-header">
-            <img width="100%" src="<?php echo $thumb_url; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="meet-the-team" sizes="100vw, 1920px">
             <div class="container">
               <div class="page-title-container">
                 <div class="page-title-wrap">
-                  <div class="page-title"><?php echo $title; ?></div>
+                  <h1 class="page-title"><?php echo $title; ?></h1>
                 </div>
               </div>
             </div>

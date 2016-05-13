@@ -149,23 +149,25 @@ header.banner {
 }
 
 .page-header {
+	background-color: $main-purple;
 	margin: 0;
 	padding: 0;
 	.container {
 		.page-title-container {
 			display: block;
-			margin-top: -7em;
 			position: relative;
-			z-index: 99;
 			.page-title-wrap {
-				background-color: rgba(0, 2, 63, 0.5);
 				color: #fff;
 				display: inline-block;
+				float: right;
 				padding: 0.5em 1em;
 				.page-title {
+					font-family: $opensans;
+					font-weight: 300;
 					font-size: 30px;
 					margin: 0;
 					color: #fff;
+					padding: 20px;
 					
 				}
 			}
