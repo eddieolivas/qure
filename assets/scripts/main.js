@@ -20,9 +20,6 @@
       init: function() {
         var $window           = $(window),
         win_height_padded = $window.height() * 1.1;
-
-      $window.on('scroll', revealOnScroll);
-
       function revealOnScroll() {
         var scrolled = $window.scrollTop(),
             win_height_padded = $window.height() * 1.1;
@@ -47,12 +44,15 @@
           var $this     = $(this),
               offsetTop = $this.offset().top;
           if (scrolled + win_height_padded < offsetTop) {
-            $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+            $(this).removeClass('animated fadeInUp flipInX lightSpeedIn');
           }
         });
       }
 
       //revealOnScroll();
+
+      $window.on('scroll', revealOnScroll);
+      
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
