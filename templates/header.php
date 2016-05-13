@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row-fluid">
     <div class="logo-wrap col-lg-2">
-      <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="/qure/wp-content/themes/qure-water/dist/images/qure-logo.png" /></a>
+      <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="/wp-content/themes/qure/dist/images/qure-logo.png" /></a>
     </div>
     <div class="col-lg-8">
       <nav class="nav-primary" role="navigation">
