@@ -23,10 +23,10 @@
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
         var $window           = $(window),
-        win_height_padded = $window.height() * 1.1;
+        win_height_padded = $window.height() * 1.5;
         function revealOnScroll() {
           var scrolled = $window.scrollTop(),
-              win_height_padded = $window.height() * 1.1;
+              win_height_padded = $window.height() * 1.5;
 
           // Showed...
           $(".revealOnScroll:not(.animated)").each(function () {
