@@ -19,11 +19,25 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <div class="wrap" role="document">
-        <div class="content row content-row">
+        <div class="content row content-row wrap-row">
           <?php if(is_page(14)) { ?>
             <div class="page-header">
               <?php echo do_shortcode('[rev_slider alias="bottling-slider"]'); ?>
             </div>
+            <div class="container">
+          <?php } elseif(is_page(16)) { 
+            $title = get_the_title();
+            ?>
+            <div class="page-header">
+              <div class="container">
+                <div class="page-title-container">
+                  <div class="page-title-wrap">
+                    <h1 class="page-title"><?php echo $title; ?></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <?php echo do_shortcode('[rev_slider alias="what-is-qure"]'); ?>
             <div class="container">
           <?php } elseif(!is_page(83)) { ?>
           <?php 

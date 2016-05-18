@@ -64,6 +64,15 @@ function widgets_init() {
   ]);
 
   register_sidebar([
+    'name'          => __('WhatIs', 'sage'),
+    'id'            => 'sidebar-whatis',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
+
+  register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
     'before_widget' => '<section class="widget %1$s %2$s">',
@@ -113,10 +122,19 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_page_template('template-custom.php'),
-    !is_page(14),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
+
+  add_filter('sage/display_sidebar', __NAMESPACE__ . 'sage_sidebar_on_special_page');
+
+  function sage_sidebar_on_special_page($sidebar) {
+    if (!is_page(16)) {
+      $sidebar = dynamic_sidebar('sidebar-whatis');
+      return true;
+    }
+    return $sidebar;
+  }
 }
 
 /**
