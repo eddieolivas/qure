@@ -18,10 +18,36 @@
     // All pages
     'common': {
       init: function() {
-      
+
+        // init Isotope
+        var $grid = $('.grid').isotope({
+          // options
+        });
+        // filter items on button click
+        $('.filter-button-group').on( 'click', 'button', function() {
+          var filterValue = $(this).attr('data-filter');
+          $grid.isotope({ filter: filterValue });
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
+        $('.nav-pills li a').click( function(e) {
+          e.preventDefault();
+          if(!$(this).hasClass('active')) {
+            $('.nav-pills li a').removeClass('active');
+            $(this).addClass('active');
+            var target = $(this).data('target');
+            $('#way1, #way2, #way3, #way4').fadeOut(600);
+            $('#' + target).fadeIn(400);
+          }
+        });
+      }
+    },
+    // Home page
+    'home': {
+      init: function() {
+        // JavaScript to be fired on the home page
         var $window           = $(window),
         win_height_padded = $window.height() * 1.1;
         function revealOnScroll() {
@@ -56,12 +82,6 @@
         //revealOnScroll();
 
         $window.on('scroll', revealOnScroll);
-      }
-    },
-    // Home page
-    'home': {
-      init: function() {
-        // JavaScript to be fired on the home page
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
@@ -107,5 +127,33 @@
 
   // Load Events
   $(document).ready(UTIL.loadEvents);
+
+  $(document).ready(function() {
+    $('#accordion-1').show();
+      function close_accordion_section() {
+          $('.accordion .accordion-section-title').removeClass('active');
+          $('.accordion .accordion-section-content').slideUp(400).removeClass('open');
+          $('.accordion .accordion-section .accordion-section-title i').removeClass('fa-minus-circle').addClass('fa-plus-circle');
+      }
+   
+      $('.accordion-section-title').click(function(e) {
+          // Grab current anchor value
+          var currentAttrValue = $(this).data('target');
+   
+          if($(this).hasClass('active')) {
+              close_accordion_section();
+          }else {
+              close_accordion_section();
+   
+              // Add active class to section title
+              $(this).addClass('active');
+              // Open up the hidden content panel
+              $(this).find('i').removeClass('fa-plus-circle').addClass('fa-minus-circle');
+              $('.accordion ' + currentAttrValue).slideDown(400).addClass('open'); 
+          }
+   
+          e.preventDefault();
+      });
+  });
 
 })(jQuery); // Fully reference jQuery after this point.

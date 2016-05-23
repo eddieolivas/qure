@@ -1,7 +1,12 @@
 .wrap-row {
 	margin: 0;
 	.main {
-		padding: 0;
+		padding: 0 0 50px 0;
+		article.qure-faq {
+			.entry-content {
+				padding-top: 15px;
+			}
+		}
 	}
 }
 #breadcrumbs {
@@ -36,7 +41,23 @@ hr.top-hr {
 			cursor: pointer;
 			border-radius: 50%;
 			text-align: center;
+		    -webkit-transition: all 0.3s ease 0s;
+		    -moz-transition: all 0.3s ease 0s;
+		    -o-transition: all 0.3s ease 0s;
+		    transition: all 0.3s ease 0s;
 		}
+		[class^="icon-"]:hover, [class^="fa-"]:hover, [class*="icon-"]:hover, [class*="fa-"]:hover, [class^="icon-"]:hover, [class^="fa-"]:hover, [class*="icon-"]:hover, [class*="fa-"]:hover {
+			background: $main-blue;
+			-webkit-transform: scale(1);
+		    -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		    -o-transform: scale(1);
+		    transform: scale(1);
+		    -webkit-box-shadow: none;
+		    -moz-box-shadow: none;
+		    box-shadow: none;
+		}
+
 		.home-title {
 			display: block;
 			font-family: 'Open Sans', sans-serif;
@@ -121,7 +142,7 @@ hr.top-hr {
 }
 
 #section-7 {
-	background: url(/qure/wp-content/themes/qure/dist/images/section-7-bg.jpg) center center repeat;
+	//background: url(/wp-content/themes/qure/dist/images/section-7-bg.jpg) no-repeat fixed 50%/cover;
 	background-size: 100% auto;
 	.color-overlay {
 		background-color: rgba(2,174,232,0.7);
@@ -152,4 +173,196 @@ hr.top-hr {
 
 .sidebar {
 	float: right;
+}
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+ 
+.accordion {
+    overflow:hidden;
+    background:#fff;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+}
+
+.accordion-section {
+	a {
+		text-decoration: none;
+		color: $main-purple;
+		&:active {
+			color: $main-purple;
+		}
+		&:visited {
+			color: $main-purple;
+		}
+	}
+}
+ 
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding:10px;
+    display:inline-block;
+    background: #f2f2f2;
+    text-decoration: none!important;
+    transition:all linear 0.15s;
+    /* Type */
+    font-size:1.200em;
+    color:$main-blue!important;
+}
+
+.accordion-section-title {
+	-webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+ 
+.accordion-section-title.active {
+    background: $main-blue;
+    color: #fff!important;
+    /* Type */
+    text-decoration:none;
+}
+
+.accordion-section {
+	&:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
+	&:hover {
+		a {
+			color: $main-purple!important;
+		}
+		.active {
+			color: #fff!important;
+		}
+	}
+}
+
+.accordion-section.active {
+	&:hover {
+    	a {
+    		color: #fff!important;
+    	}
+    }
+}
+ 
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+ 
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:15px;
+    display:none;
+    font-size: 14px;
+    p.numbered-p {
+    	padding-left: 50px;
+    }
+}
+
+.accordion-section-content.open {
+    	border: 1px solid #eee;
+    	&:after {
+    		clear: both;
+    		content: '';
+    		display: block;
+    	}
+}
+
+.accordion-section > p {
+	margin-bottom: 0;
+}
+
+.fa-stack.fa-lg {
+	color: $main-purple;
+	float: left;
+}
+
+#accordion-2 {
+	.fa-stack.fa-lg {
+		color: #46a546;
+	}
+}
+
+#accordion-3 {
+	.fa-stack.fa-lg {
+		color: #444;
+	}
+}
+
+.fa.fa-inverse.fa-stack-1x {
+	font-family: $opensans;
+	font-weight: bold;
+}
+
+#ways-nav {
+	margin-bottom: 25px;
+	ul {
+		li {
+			a {
+				background: #fff;
+				color: $main-blue;
+			}
+			a.active {
+				background: $main-blue;
+				color: #fff;
+			}
+		}
+	}
+}
+
+#way2, #way3, #way4 {
+	display: none;
+}
+
+.type-water {
+	color:#666; 
+	border-radius: 5px; 
+	padding:15px;
+}
+
+.button-group.filter-button-group {
+	button {
+		background: $main-blue;
+		border: none;
+		border-radius: 5px;
+		color: #fff;
+		display: inline-block;
+		margin-right: 5px;
+		padding: 5 10px;
+	}
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }
+
+
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 32%;
+  margin: 5px;
+  padding: 0;
 }

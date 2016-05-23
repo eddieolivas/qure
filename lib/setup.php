@@ -73,6 +73,24 @@ function widgets_init() {
   ]);
 
   register_sidebar([
+    'name'          => __('Reviews', 'sage'),
+    'id'            => 'sidebar-reviews',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
+
+  register_sidebar([
+    'name'          => __('Studies', 'sage'),
+    'id'            => 'sidebar-studies',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
+
+  register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
     'before_widget' => '<section class="widget %1$s %2$s">',
@@ -122,19 +140,20 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_page_template('template-custom.php'),
+    is_page(18),
+    is_page(28),
+    is_page(33),
+    is_page(12),
+    is_page(10),
+    is_page(26),
+    is_page(20),
+    is_page(22),
+    is_page(26),
+    is_page(31),
+    get_post_type() == 'qure-faq',
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
-
-  add_filter('sage/display_sidebar', __NAMESPACE__ . 'sage_sidebar_on_special_page');
-
-  function sage_sidebar_on_special_page($sidebar) {
-    if (!is_page(16)) {
-      $sidebar = dynamic_sidebar('sidebar-whatis');
-      return true;
-    }
-    return $sidebar;
-  }
 }
 
 /**

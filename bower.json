@@ -9,7 +9,10 @@
   "dependencies": {
     "bootstrap-sass": "3.3.6",
     "animate.css": "^3.5.1",
-    "modernizr": "^3.3.1"
+    "modernizr": "^3.3.1",
+    "parallax.js": "^1.4.2",
+    "isotope": "^3.0.0",
+    "featherlight": "^1.4.1"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -33,6 +36,10 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
       ]
+    },
+    "isotope": {
+      "main": "dist/isotope.pkgd.min.js",
+      "dependencies": {}
     }
   }
 }
